@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "RR";
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background: #ebebeb;
+}
+
+.header-nav {
+  background: #322e41;
+}
+
+.header-nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-nav-link {
+  color: #fff;
+  font-size: 16px;
+  padding: 22px;
+  transition: all 300ms;
+  display: block;
+}
+
+.header-nav-link:hover {
+  color: #d47300;
+  background: white;
+}
+
+.header-content {
+  height: 500px;
+  background: url(../images/headerbg.jpg) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.header-content-title {
+  color: #fff;
+  font-family: "RB";
+  font-size: 50px;
+}
+.header-content-text {
+  color: #fff;
+  font-size: 18px;
+}
+
+.header-content-text span {
+  font-family: "RB";
+}
+
+.main-left {
+  border-radius: 6px;
+  background: #fff;
+  max-width: 540px;
+  width: 100%;
+  padding: 15px;
+}
+.main-left-img {
+  width: 100%;
+}
+.main-left-title {
+  color: #2c2a2a;
+  font-family: "RB";
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-left-text {
+  color: #9b9b9b;
+  font-size: 16px;
+  max-height: 150px;
+  overflow: auto;
+}
+.main-right {
+  max-width: 540px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.main-right-item {
+  box-shadow: 0 0 50px 0 red inset;
+  border-radius: 6px;
+  background: #fff;
+  max-width: 255px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+.main-right-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d47300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-right-title {
+  color: #2c2a2a;
+  text-align: center;
+  font-family: "RB";
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.main-right-text {
+  color: #9b9b9b;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer {
+  /* width: 1400px;
+  height: 258px;
+  flex-shrink: 0; */
+  background-color: #322e41;
+  padding: 40px 0;
+}
+.footer-form {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.footer-form-input {
+  border-radius: 6px;
+  background: white;
+  color: #9b9b9b;
+  font-size: 16px;
+  border: none;
+  padding: 9px 10px;
+}
+.footer-form-input:focus {
+  outline: none;
+}
+
+.footer-form-btn {
+  border-radius: 6px;
+  background: #544294;
+  color: white;
+  border: none;
+  height: 36px;
+  padding: 9px 0;
+}
+
+.footer-form-message {
+  border-radius: 6px;
+  background: #fff;
+  color: #9b9b9b;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  height: 86px;
+  outline: none;
+  resize: none;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-list {
+  max-width: 230px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.footer-list-link {
+  color: #fff;
+  font-size: 16px;
+  transition: all 300ms;
+  min-width: 85px;
+  display: block;
+}
+.footer-list-link:hover {
+  color: #d47300;
+}
+.footer-images {
+  display: flex;
+  justify-content: space-between;
+  width: 197px;
+  margin-right: 145px;
+}
+.footer-image {
+  width: 30px;
+}
+@media (max-width: 1140px) {
+  .main-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .header-nav-box {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .header-nav {
+    padding-top: 10px;
+  }
+  .header-nav-list {
+    justify-content: center;
+  }
+  .footer-box {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-right-item {
+    max-width: none;
+  }
+  .header-content {
+    height: 300px;
+  }
+  .main-box {
+    margin-top: 40px;
+  }
+}
